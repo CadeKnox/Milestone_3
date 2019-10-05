@@ -1,0 +1,23 @@
+---
+title: "Final Project Data"
+author: "Cade Knox"
+date: "10/4/2019"
+output: html_document
+---
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+# The first package that I installed and then I'll load includes data from all of the MLB and every player that has ever played in it. 
+# This package was made by Author, Sean Lahman and is commonly used as a collection of many baseball datasets.
+# I found out about the package as I was doing research and am preparing to read a book "Analyzing Baseball Data with R".
+# If you look at the "Master" data set you see a glimpse of the detailed info it has on every player.
+library(Lahman)
+# Second package is pitchRx which is the PITCHf/x info or the details of every pitch thrown in every at bat.
+# This allows for precise details about every pitch of the season down to what pitch it was, where it was in the zone, the result of it and more.
+# Through some selecting and filtering with this data, you can get any pitchers history.
+library(pitchRx)
+
+# Combining these two packages and the datasets that come from them will allow me to compare pitchers by region of country.
+# Seeing if pitchers are more likely to throw a certain style and have success with that style depending on where they are from.
+```
+
